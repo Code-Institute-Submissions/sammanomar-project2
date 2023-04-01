@@ -1,69 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Puzzle</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h2>Puzzle</h2>
-        <ul>
-            <li class="active" data-lvl="level-1">Level 1</li>
-            <li data-lvl="level-2">Level 2</li>
-            <li data-lvl="level-3">Level 3</li>
-            <li>Level 4</li>
-            <li>Level 5</li>
-        </ul>
-    </header>
-<main>
-    <div class="level-1">
-        <div class="img-holder">
-            <img src="assets/images/level-1/slice1.png" class="thumb">
-        </div>
-        <div class="img-holder">
-            <img src="assets/images/level-1/slice2.png" class="thumb">
-        </div>
-        <div class="img-holder">
-            <img src="assets/images/level-1/slice3.png" class="thumb">
-        </div>
-        <div class="img-holder">
-            <img src="assets/images/level-1/slice4.png" class="thumb">
-        </div>
-    </div>
-    <div class="level-2">
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice1.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice2.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice3.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice4.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice5.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice6.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice7.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice8.jpg" alt=""></div>
-        <div class="img-holder-2"><img class="thumb" src="slice_lvl_2/slice9.jpg" alt=""></div>
-    </div>
-    <div class="level-3">
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice1.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice2.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice3.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice4.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice5.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice6.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice7.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice8.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice9.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice10.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice11.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice12.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice13.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice14.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice15.jpg" alt=""></div>
-        <div class="img-holder-3"><img class="thumb" src="slice_lvl_3/slice16.jpg" alt=""></div>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    </div>
-</main>
+<head>
+    <title>Image Puzzle</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/image-puzzle.css" rel="stylesheet" />
     <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div id="collage">
+        <h2>Image Puzzle</h2>
+        <hr />
+        <div id="playPanel" style="padding:5px;display:none;">
+            <h3 id="imgTitle"></h3>
+            <hr />
+            <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+                <ul id="sortable" class="sortable"></ul>
+                <div id="actualImageBox">
+                    <div id="stepBox">
+                        <div>Steps:</div>
+                        <div id="stepCount" class="stepCount">0</div>
+                    </div>
+                    <div id="timeBox">
+                        Time Taken: <span id="timerPanel"></span> secs
+                    </div>
+                    <img id="actualImage" />
+                    <div>Re-arrange to create a picture like this.</div>
+                    <p id="levelPanel">
+                        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
+                        /> <label for="easy">Easy</label>
+                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="medium">Medium</label>
+                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="hard">Hard</label>
+                    </p>
+                    <div>
+                        <button id="btnRule" type="button" class="btn" onclick="rules();">Rules</button>
+                        <button id="newPhoto" type="button" class="btn" onclick="restart();">Another Photo</button>
+                        <button id="btnReplay" type="button" class="btn" onclick="about();">About</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameOver" style="display:none;">
+            <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
+                <h2 style="text-align:center">Game Over!!</h2>
+                Congratulations!! <br /> You have completed this picture.
+                <br /> Steps: <span id="stepCount" class="stepCount">0</span> steps.
+                <br /> Time Taken: <span class="timeCount">0</span> seconds<br />
+                <div>
+                    <button type="button" onclick="window.location.reload(true);">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var images = [
+                { src: 'assets/images/chamomile.jpg', title: 'Chamomile' },
+                { src: 'assets/images/greenland.jpg', title: 'Greenland' },
+                { src: 'assets/images/beach.jpg', title: 'Beach' },
+                { src: 'assets/images/island.jpg', title: 'Island' },
+                { src: 'assets/images/sunrise.jpg', title: 'Sunrise' }
+            ];
+
+            window.onload = function () {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            };
+            function restart() {
+                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
+                imagePuzzle.startGame(images, gridSize);
+            }
+            function rules() {
+                alert('Re arrange the image parts in a way that it correctly forms the picture. \nThe no. of steps taken will be counted.');
+            }
+            function about() {
+                alert('project 2 made by Owen using HTML, CSS & JavaScript');
+            }
+        </script>
+    </div>
 </body>
 </html>
