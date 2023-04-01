@@ -1,3 +1,4 @@
+//Timer
 var timerFunction;
 
 var imagePuzzle = {
@@ -17,6 +18,8 @@ var imagePuzzle = {
         helper.doc('timerPanel').textContent = elapsedTime;
         timerFunction = setTimeout(imagePuzzle.tick, 1000);
     },
+
+    //Breaking images
     setImage: function (images, gridSize = 4) {
         var percentage = 100 / (gridSize - 1);
         var image = images[Math.floor(Math.random() * images.length)];
@@ -65,6 +68,7 @@ var imagePuzzle = {
                     helper.doc('stepCount').textContent = ++imagePuzzle.stepCount;
                     document.querySelector('.timeCount').textContent = (parseInt((now - imagePuzzle.startTime) / 1000, 10));
 
+                    //Drag and Drop of Pieces
                     if (isSorted(vals)) {
                         // helper.doc('actualImageBox').style.display = 'none';
                         // helper.doc('gameOver').style.display = 'block';
