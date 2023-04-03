@@ -3,28 +3,26 @@
 
 # The purpose of this project
 
-This dynamic website was made as a puzzle game for the purpose of playing puzzle game.
+This dynamic website was made as a puzzle game for the purpose of playing puzzle.
 
 ![](assets/screenshots/headeri.png)
 
-The site contains three pages and two additional links to download 1 page cv at the home page 
-and detailed cv in career history page :
+The site contains one page 
 
 1. interactive home page
 ![](assets/screenshots/chartsi.png)
-2. career history page 
-3. get in touch page.
+
 
 
 ## The target audience 
 
-Employers and customers world-wide.
+Gamers who love to play puzzle games
 
-This website is the first of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
+This website is the 2nd of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
 
-Requirements for the project is that the website has to be static and responsive using HTML5 and CSS3.
+Requirements for the project is that the website has to be static and responsive using HTML5, CSS3 and JavaScript.
 
-A live version of the project can be found here -  https://sammanomar.github.io/project1/
+A live version of the project can be found here -  https://sammanomar.github.io/project2/
 
 ## Table of Content
 
@@ -61,8 +59,7 @@ A live version of the project can be found here -  https://sammanomar.github.io/
 
 This website is meant for:
 
-- Employers who are looking for my skill-set
-- Customers who need my services
+- gamers who love puzzle games
 
 
 # 4. Existing parties

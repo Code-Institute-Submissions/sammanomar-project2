@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<div style="background-image: url(assets/images/bg.jpg); background-size: cover; margin-bottom: 0px; position:static ;">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <title>Puzzle</title>
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/image-puzzle.css" rel="stylesheet" />
-    <script src="assets/js/script.js"></script>
 </head>
 <body>
     <div id="collage">
+    <header>     
         <br>
         <h2 style="margin-top: 0;">Puzzle</h2>
-        <hr />  
+        <hr />
+    </header>
+    <main>             
         <div id="playPanel" style="padding:5px;display:none;">
             <h3 id="imgTitle"></h3>
             <hr />
@@ -28,12 +33,13 @@
                     </div>
                     <img id="actualImage" />
                     <div>Re-arrange to create a picture like this.</div>
-                    <p id="levelPanel">
+                    <br>
+                    <div id="levelPanel">
                         <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
                         /> <label for="easy">Easy</label>
                         <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />   <label for="medium">Medium</label>
                         <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />    <label for="hard">Hard</label>
-                    </p>
+                    </div>
                     <div>
                         <button id="btnRule" type="button" class="btn" onclick="rules();">Rules</button>
                         <button id="newPhoto" type="button" class="btn" onclick="restart();">Another Photo</button>
@@ -42,6 +48,7 @@
                 </div>
             </div>
         </div>
+    </main>
         <div id="gameOver" style="display:none;">
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
                 <h2 style="text-align:center">Game Over!!</h2>
@@ -86,6 +93,7 @@
     </div>
 
     <footer></footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 </div>
