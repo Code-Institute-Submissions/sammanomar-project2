@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<div style="background-image: url(assets/images/pix/las-vegas.jpg); background-size: cover;">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Advance</title>
-        <link rel="stylesheet" href="assets/css/advance.css">
-        <script src="assets/js/advance.js"></script>
-    </head>
-
-    <body>
-        <br>
-        <div id="board"></div>
-        <h2>Turns: <span id="turns">0</span></h2>
-        <div id="pieces"></div>
-        <footer></footer>
-    </body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Puzzle Game</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/advance.css" />
+  </head>
+  <body>
+    <div class="cover-screen">
+      <p id="result"></p>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="moves"></div>
+    <div class="slider-game">
+      <div class="container"></div>
+      <div class="original-image">
+        <img src="/assets/images/las-vegas.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="/assets/js/advance.js"></script>
+  </body>
 </html>
-</div>
