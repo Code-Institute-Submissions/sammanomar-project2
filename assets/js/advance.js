@@ -12,7 +12,7 @@ window.onload = function() {
         for (let c = 0; c < columns; c++) {
             //<img>
             let tile = document.createElement("img");
-            tile.src = "/assets/images/blank.jpg";
+            tile.src = "/assets/images/pix/blank.jpg";
 
             //DRAG FUNCTIONALITY
             tile.addEventListener("dragstart", dragStart); //click on image to drag
@@ -43,7 +43,7 @@ window.onload = function() {
 
     for (let i = 0; i < pieces.length; i++) {
         let tile = document.createElement("img");
-        tile.src = "/assets/images/" + pieces[i] + ".jpg";
+        tile.src = "/assets/images/pix/" + pieces[i] + ".jpg";
 
         //DRAG FUNCTIONALITY
         tile.addEventListener("dragstart", dragStart); //click on image to drag
