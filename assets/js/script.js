@@ -65,7 +65,7 @@ var imagePuzzle = {
 
                     let vals = Array.from(helper.doc('sortable').children).map(x => x.id);
                     var now = new Date().getTime();
-                    helper.doc('stepCount').textContent = ++imagePuzzle.stepCount;
+                    helper.doc('stepCout').textContent = ++imagePuzzle.stepCount;
                     document.querySelector('.timeCount').textContent = (parseInt((now - imagePuzzle.startTime) / 1000, 10));
 
                     //Drag and Drop of Pieces
@@ -93,4 +93,4 @@ var helper = {
             ul.appendChild(ul.children[Math.random() * i | 0]);
         }
     }
-}
+};

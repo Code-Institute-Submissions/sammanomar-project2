@@ -187,14 +187,13 @@ Solution: The errors were easily corrected.
 - HTML
 No errors were returned when passing through the official W3C Validator
 W3C HTML Validator.
-![](/assets/screenshots/home.png)
-![](/assets/screenshots/career.png)
-![](/assets/screenshots/contact.png.
+![](/assets/screenshots/csstest1.png)
+
 
 - CSS
 No errors were returned when passing through the official (Jigsaw validator)
 Jigsaw validator
-![](/assets/screenshots/csstest.png)
+![](/assets/screenshots/csstest1.png)
 
 Lighthouse testing
 Lighthouse testing score
