@@ -65,13 +65,13 @@ var imagePuzzle = {
 
                     let vals = Array.from(helper.doc('sortable').children).map(x => x.id);
                     var now = new Date().getTime();
-                    helper.doc('stepCout').textContent = ++imagePuzzle.stepCount;
+                    helper.doc('stepCount').textContent = ++imagePuzzle.stepCount;
                     document.querySelector('.timeCount').textContent = (parseInt((now - imagePuzzle.startTime) / 1000, 10));
 
                     //Drag and Drop of Pieces
                     if (isSorted(vals)) {
                         helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
-                        helper.doc('stepCount').textContent = imagePuzzle.stepCount;
+                        helper.doc('stepCoun').textContent = imagePuzzle.stepCount; //Counter of game over results
                     }
                 }
             };
