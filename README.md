@@ -3,14 +3,9 @@
 
 # The purpose of this project
 
-This dynamic website was made as a puzzle game for the purpose of playing puzzle.
+This one page dynamic website was made as a puzzle game for the purpose of playing puzzle.
 
-![](assets/screenshots/headeri.png)
-
-The site contains one page 
-
-1. interactive home page
-![](assets/screenshots/chartsi.png)
+![](/assets/screenshots/turtle.png)
 
 
 
@@ -86,15 +81,15 @@ Required technologies: HTML, CSS, JavaScript
 
 # 8. Design
 
-I have gathered many ideas and researches from various websites and sources and compiled them interactively in this website using my own structure
+I have gathered many ideas and researches from various sources and compiled them in this website using my own structure
 
-My aim has been to create a clean looking website where there is a balance between colors, images and functionality.
+My aim has been to create a clean and neat looking website where there is a balance between colors, images and functionality.
 
 Puzzle game website is a 1 pages website. it consists of 10 different puzzle picutres along with 3 different levels of difficulty. radio button and buttons were place neatly to ensure easy navigation between different levels and images.
 
 # 9. Colors
 
-The color palette was created using white, black, light grey in compatible with the background pictures and colors.
+The color palette was created using simple white, black, light grey in compatible with the puzzle pictures and colors.
 
 
 # 10.Typography
@@ -106,34 +101,31 @@ Staatliches was chosen as the body and heading font with a fallback of Merriweat
 Images has been chosen carefully in accordance to color, content and visibility. The purpose of the website is to give a friendly look and express quality. Images has been sized in order to match design. All the pictures were directly captured by were downloaded thru free download picures websites:
 
 https://pexels.com
-https://unsplash.com/
+https://unsplash.com
 
 
 # 12. Features
 
 Puzzle game website is a 1 page website that consists of :
 
-- Header (Logo/Menu)
-- Download CV options (1 page CV as a summary in the Home page and 6 pages detailed cv in the Career history page)
-- recommendations by my directs managers in the past
-- dynamic and static charts
-- Footer with linkedin logo an copyright
+- One HTML file which contains :
+# 1. Head and body
+# 2. Header and Main
+# 3. Nested script element with pictures inside the body
+# 4. Footer
+- 2 CSS files
+- One JavaScript file
 
 # 13. Existing Features
 
-- Interactive sea view picture captured by me
-- Interactive values chart in the first page with dynamic feature when you touch or move the cursor over the bars chart 
-- Skills rows chart 
-- Creative pictures captured by me
-- 6 divided pictures hyperlinked directly and accurately to the expact and relevant career section in career history page
-- Get in touch form, map and linked-in Footer
-- Small rounded photo of me is nested right under the 1st and the 2nd page. The same applies to the 3rd page but I place a google map of my location instead of my picture. 
-- My logo name is fixed on the top in order to make it easy for the user to get back to the home page
-- Linkedin logo footer is connected directly to my linked in home page and get in touch page. 
-- linkedin logo is fixed to the left margin of career history page and dynamically sticked when you scroll the page. I applied a change color and bigger size font freature whenever you touch the logo there.
-- Interactive navigation bar that changes it's color while scrolling all the pages
-- Be aware that I have put linked anchor in the footer in the 1st and last pages while have removed it from the 2nd page intentionally because I replaced it with a sticky scroll down Linkedin log instead
-- 1 CV Page link has been added to the menu at the home page as a summary only while detailed CV link has been added to the career history page.
+- 1 puzzle page contains 10 different images
+- Each image have 3 level of difficulty
+- Creative pictures selected carefully for the project
+- Start game, timer and number of steps functions. They start from zero whenver you refresh the browser,select another image or level and win the game.
+- Drop and drag logical function
+- I have used querySelector method in javaScript coding. 
+- Restart function a long with "About" and "Rules" functions nested with alert whenever you click on buttons
+- Game over pop up message whenever you win the game
  
 
 # 14. Get in touch page
@@ -155,12 +147,13 @@ Form-dump page
 
 # 17. Features Left to Implement
 
-I am excited to apply some creative JavaScript features as soon as I start learning JS
+I am excited to learn and apply more and more creative and advance JavaScript features in the future
 
 # 18. Technologies used
 
 HTML
 CSS
+JavaScript
 Testing
 
 # 19. Testing
@@ -215,7 +208,7 @@ Back to top
 
 # 22. Development and Deployment
 
-The development environment used for this project was GitPod. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod environment was created using a template provided by Code Institute.
+The development environment used for this project was GitPod and Codeanywhere. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod/Codeanywhere environment was created using a template provided by Code Institute.
 
 The live version of the project is deployed at GitHub pages.
 
@@ -227,51 +220,43 @@ At the top of the repository, select Settings from the menu items.
 Scroll down the Settings page to the ”GitHub Pages" section and click on the ”Check it out here!”
 At the ”Source” section choose ”main” as Branch and root as folder and click ”Save”
 The website will deploy and the pages refreshes to provide the live link to the project.
-The live link can be found here - https://sammanomar.github.io/project1/
+The live link can be found here - https://sammanomar.github.io/project2/
 
 # 23. Content
 
-All text content on this site has been produced by the author of the project and is not fictional. It represents my real life career history and up to date portfolio.
-The design of the project is inspired by Code Institutes ”Love Running” and coffeeshop in Dublin projects. Code has been borrowed from the two projects.
-The icons in the header, contact and home page and footer were taken from Font Awesome.
+All text content on this site has been produced by the author of the project and is not fictional. It represents my real life idea of a puzzle game.
+The design of the project was drawn and structure on a piece of paper before conducting the project.
+I have gone through thorough researches at some point to learn some specific functions and put them into use to the project.
 
 # 24. Media
 
-All images are taken directly by my mobile phone. They are licensed under a broad commercial license that allows them to be used in this project (Named ”P1”). The license allows usage for public purposes.
+All images are licensed under a broad commercial license that allows them to be used in this project (Named ”P1”). The license allows usage for public purposes.
 
 Link to license agreement
-https://opencityphotos.com
-https://unsplash.com/s/photos/erlangen
+https://pexels.com
+https://unsplash.com
 
 
 # 25. Credits
 
 For code inspiration, design inputs, help and advice. Many thanks to:
 
-My great mentor at Code Institute. She gave me many recommendations and notes.
+- My great mentor at Code Institute. She gave me many recommendations and notes.
 Lauren-Nicole
-
-Junior Web Developer - SWGFL | Hackteam: Thank you for the help with git pull problem
-Kera Cudmore
-
+- Kasia Bogucka/Kera Cudmore/Jo Heyndels: Thank you for the help with many technical issues.
+-Student care : Thanks for your help migrating me to Codeanywhere smoothly and immediately when my Gitpod stopped.
 
 Sites that has provided me with knowledge and information that has been vital to this project:
 
 https://www.w3schools.com/ https://stackoverflow.com https://www.diffchecker.com https://www.quora.com
-https://glyphs.co https://fontawesome.com https://www.coding-dude.com/
 
-And all the content in HTML-Essentials, CSS-Essentials and the Walkthrough project ”Love Running” that has provided inspiration and knowledge.
+And all the content in HTML-Essentials, CSS-Essentials, JavaScript and the Walkthrough project ”Love Maths” that has provided inspiration and knowledge.
 
 ## 5 additional screenshots
 
-![](/assets/screenshots/footeri.png)
-![](/assets/screenshots/headerii.png)
-![](/assets/screenshots/footerii.png)
-![](/assets/screenshots/headeriii.png)
-![](/assets/screenshots/footeriii.png)
-
-
-
+![](/assets/screenshots/level1.png)
+![](/assets/screenshots/level2.png)
+![](/assets/screenshots/level3.png)
 
 
 Best regards

@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
     <title>Puzzle</title>
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/image-puzzle.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/image-puzzle.css" rel="stylesheet">
 </head>
 <body>
     <div id="collage">
     <header>     
         <br>
         <h2 style="margin-top: 0; font-size: xx-large;">Puzzle</h2>
-        <hr />
+        <hr>
     </header>
     <main>             
         <div id="playPanel" style="padding:5px;display:none;">
-            <h3 id="imgTitle"></h3>
-            <hr />
+            <h3 id="imgTitle">""</h3>
+            <hr>
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
@@ -31,14 +30,13 @@
                     <div id="timeBox">
                         Time Taken: <span id="timerPanel"></span> secs
                     </div>
-                    <img id="actualImage" />
+                    <img id="actualImage" alt="Actual Image" src="None">
                     <div>Re-arrange to create a picture like this.</div>
                     <br>
                     <div id="levelPanel">
-                        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
-                        /> <label for="easy">Easy</label>
-                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />   <label for="medium">Medium</label>
-                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />    <label for="hard">Hard</label>
+                        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"> <label for="easy">Easy</label>
+                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);"> <label for="medium">Medium</label>
+                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);"> <label for="hard">Hard</label>
                     </div>
                     <div>
                         <button id="btnRule" type="button" class="btn" onclick="rules();">Rules</button>
@@ -52,9 +50,9 @@
         <div id="gameOver" style="display:none;">
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
                 <h2 style="text-align:center">Game Over!!</h2>
-                Congratulations!! <br /> You have completed this picture.
-                <br /> Steps: <span id="stepCount" class="stepCount">0</span> steps.
-                <br /> Time Taken: <span class="timeCount">0</span> seconds<br />
+                Congratulations!! <br> You have completed this picture.
+                <br> Steps: <span id="stepCount" class="stepCount">0</span> steps.
+                <br> Time Taken: <span class="timeCount">0</span> seconds<br>
                 <div>
                     <button type="button" onclick="window.location.reload(true);">Play Again</button>
                 </div>
@@ -96,4 +94,3 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-</div>

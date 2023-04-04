@@ -70,8 +70,6 @@ var imagePuzzle = {
 
                     //Drag and Drop of Pieces
                     if (isSorted(vals)) {
-                        // helper.doc('actualImageBox').style.display = 'none';
-                        // helper.doc('gameOver').style.display = 'block';
                         helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
                         helper.doc('stepCount').textContent = imagePuzzle.stepCount;
                     }

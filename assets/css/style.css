@@ -7,11 +7,11 @@ body {
 h2{
     font-weight:normal;
     text-align:center;
-    color: rgb(112, 112, 112);
+    color: gray;
 }
 h3{
     font-weight:normal;
     margin:3px 0px;
     text-align:center;
-    font: rgb(112, 112, 112);
+    color: black;
 }
