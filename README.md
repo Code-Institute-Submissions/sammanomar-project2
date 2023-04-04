@@ -16,7 +16,7 @@ The site contains one page
 
 ## The target audience 
 
-Gamers who love to play puzzle games
+Gamers who love puzzle games
 
 This website is the 2nd of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
 
@@ -64,35 +64,33 @@ This website is meant for:
 
 # 4. Existing parties
 
-- As an employer: I want to be able to see the creative portfolio of Omar.
-- As an employee: I want to get in touch with employers.
-- As a Customer: I want to be able to contact Omar for enquiries.
+- As a gamer: I want to enjoy playing puzzle game with different levels of difficulty.
+- As a desginer: I want to impress gamers with this game
 
 # 5. New Users
 
-- As a new User: I want to know more  Omar skill-set and capabilities.
-- As a new User: I want to contact Omar for a possible job contracts.
-- As a new User: I want to contact Omar for enqueries.
+- As a new gamer: I want to enjoy playing puzzle game with different levels of difficulty.
+- As a new gamer: I want to see the latest versions of puzzle game regularly 
 
 # 6. User Goals
 
-Find a job and win contracts
+impress gamers
 
 
 # 7. Requirements
 
 A static responsive website that incorporates the technologies I have learned so far that contains some advanced functionality. The development process needs to be well documented through a version controls system such as GitHub.
 
-Required technologies: HTML, CSS
+Required technologies: HTML, CSS, JavaScript
 
 
 # 8. Design
 
-As this is my first project the design has been influenced by the ”Love Running” & "Coffeeshop in Dublin" - projects. I gathered many ideas from various websites and compiled them interactively in this website
+I have gathered many ideas and researches from various websites and sources and compiled them interactively in this website using my own structure
 
 My aim has been to create a clean looking website where there is a balance between colors, images and functionality.
 
-Omar Samman website is a 3 pages website with two addtional links to download 1 page cv and detailed cv. Menu is fixed on top in order to ensure easy navigation between the pages.
+Puzzle game website is a 1 pages website. it consists of 10 different puzzle picutres along with 3 different levels of difficulty. radio button and buttons were place neatly to ensure easy navigation between different levels and images.
 
 # 9. Colors
 
@@ -101,20 +99,19 @@ The color palette was created using white, black, light grey in compatible with 
 
 # 10.Typography
 
-Karla, Spectral+SC Font were chosen as the body and heading font with a fallback of Sans-Serif.
+Staatliches was chosen as the body and heading font with a fallback of Merriweather+Sans.
 
 # 11. Images
 
-Images has been chosen in accordance to color and content. The purpose of the website is to give a friendly look and express quality. Images has been sized in order to match design. Most of the pictures were directly captured by me. Only few pictures were downloaded thru from free download picures websites:
+Images has been chosen carefully in accordance to color, content and visibility. The purpose of the website is to give a friendly look and express quality. Images has been sized in order to match design. All the pictures were directly captured by were downloaded thru free download picures websites:
 
 https://pexels.com
-https://opencityphotos.com
-https://unsplash.com/s/photos/erlangen
+https://unsplash.com/
 
 
 # 12. Features
 
-Omar Samman website is a 3 pages website that consists of :
+Puzzle game website is a 1 page website that consists of :
 
 - Header (Logo/Menu)
 - Download CV options (1 page CV as a summary in the Home page and 6 pages detailed cv in the Career history page)
