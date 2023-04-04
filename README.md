@@ -34,19 +34,16 @@ A live version of the project can be found here -  https://sammanomar.github.io/
 11. Images
 12. Features
 13. Existing Features
-14. Get in touch page
-15. Footer Section
-16. Form-dump page
-17. Features Left to Implement
-18. Technologies used
-19. Testing
-20. Validator Testing
-21. Unfixed Bugs
-22. Development and Deployment
-23. Content
-24. Media
-25. Credits
-26. UX
+14. Features Left to Implement
+15. Technologies used
+16. Testing
+17. Validator Testing
+18. Unfixed Bugs
+19. Development and Deployment
+20. Content
+21. Media
+22. Credits
+23. Additional screenshots
 
 # 2. User Demographic
 
@@ -128,35 +125,18 @@ Puzzle game website is a 1 page website that consists of :
 - Game over pop up message whenever you win the game
  
 
-# 14. Get in touch page
-
-The section contains a registration form and contact details. It also has a map that displays my location inside a round shape.
-The purpose of this section is to make contact and registration as easy as possible. The User uses the form to contact me as an employer or customer. In order to establish direct contact as easy as possible the section also provides the User with a telephone number and an email. If the form is used in this version it sends the User to a form-dump page with a message.
-Contact and Registration Section
-
-# 15. Footer Section
-
-The Footer contains a direct link to my linkedin and copyright.
-The purpose of the Footer is to provide easy access for the User to my linkedin.
-
-# 16. Form-dump page
-
-This site contains a message when the form has been used.
-The purpose of this page is to give the user an indication on that the form is working and that the message has been recived.
-Form-dump page
-
-# 17. Features Left to Implement
+# 14. Features Left to Implement
 
 I am excited to learn and apply more and more creative and advance JavaScript features in the future
 
-# 18. Technologies used
+# 15. Technologies used
 
 HTML
 CSS
 JavaScript
 Testing
 
-# 19. Testing
+# 16. Testing
 
 Test of functionality and appearance of the website has have been dealt with thru out all stages of the development phase.
 
@@ -167,27 +147,30 @@ Test has been conducted using Google Chrome and Safari. Testing different device
 - Unclosed div and p element were discovered
 Solution: closed
 
-- Download CV links didn't work correctly because of some spaces
-Solution: spaces were removed and it function correctly
+- Move script tags below footer tags, but inside the body
+Solution: closed
 
-- Unnecessary sections wrapped ids were added wrongly
-Solution: sections removed and the commands were wrapped with divs instead
+- Remove <div> tags that are outside of the <html> tags
+Solution: closed
+
+- Add alt attributes to <image> tags
+Solution: closed
+
+- Input elements cannot be inside of a <p> element
+Solution: closed
 
 - Duplicated ids were added wrong
 Solution: classes were added to override the duplicated ids error
 
-- Top menu disappears even though its fixed.
-Solution: Had to use z-index to keep the menu on top of all sections and elements, value set to 20
-
 - Apart from these issues there have been several minor issues. The majority of these has been due to miss spelled tags, attributes and other mistakes.
 Solution: The errors were easily corrected.
 
-# 20. Validator Testing
+# 17. Validator Testing
 
 - HTML
 No errors were returned when passing through the official W3C Validator
 W3C HTML Validator.
-![](/assets/screenshots/csstest1.png)
+![](/assets/screenshots/.png)
 
 
 - CSS
@@ -195,17 +178,20 @@ No errors were returned when passing through the official (Jigsaw validator)
 Jigsaw validator
 ![](/assets/screenshots/csstest1.png)
 
+JS
+No vital errors were returned when testing the cod at JSHint website
+
 Lighthouse testing
 Lighthouse testing score
 ![](/assets/screenshots/lighthouse.png)
 
-# 21. Unfixed Bugs
+# 18. Unfixed Bugs
 
-All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-03-16. No more testing will be conducted now and the project will be submitted.
+All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-04-04. No more testing will be conducted now and the project will be submitted.
 
 Back to top
 
-# 22. Development and Deployment
+# 19. Development and Deployment
 
 The development environment used for this project was GitPod and Codeanywhere. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod/Codeanywhere environment was created using a template provided by Code Institute.
 
@@ -221,13 +207,13 @@ At the ”Source” section choose ”main” as Branch and root as folder and c
 The website will deploy and the pages refreshes to provide the live link to the project.
 The live link can be found here - https://sammanomar.github.io/project2/
 
-# 23. Content
+# 20. Content
 
 All text content on this site has been produced by the author of the project and is not fictional. It represents my real life idea of a puzzle game.
 The design of the project was drawn and structure on a piece of paper before conducting the project.
 I have gone through thorough researches at some point to learn some specific functions and put them into use to the project.
 
-# 24. Media
+# 21. Media
 
 All images are licensed under a broad commercial license that allows them to be used in this project (Named ”P1”). The license allows usage for public purposes.
 
@@ -236,7 +222,7 @@ https://pexels.com
 https://unsplash.com
 
 
-# 25. Credits
+# 22. Credits
 
 For code inspiration, design inputs, help and advice. Many thanks to:
 
@@ -251,7 +237,7 @@ https://www.w3schools.com/ https://stackoverflow.com https://www.diffchecker.com
 
 And all the content in HTML-Essentials, CSS-Essentials, JavaScript and the Walkthrough project ”Love Maths” that has provided inspiration and knowledge.
 
-## 5 additional screenshots
+## 23 Additional screenshots
 
 ![](/assets/screenshots/level1.png)
 ![](/assets/screenshots/level2.png)
