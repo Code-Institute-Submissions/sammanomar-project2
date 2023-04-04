@@ -170,7 +170,7 @@ Solution: The errors were easily corrected.
 - HTML
 No errors were returned when passing through the official W3C Validator
 W3C HTML Validator.
-![](/assets/screenshots/.png)
+![](/assets/screenshots/htmltest.png)
 
 
 - CSS
@@ -183,13 +183,12 @@ No vital errors were returned when testing the cod at JSHint website
 
 Lighthouse testing
 Lighthouse testing score
-![](/assets/screenshots/lighthouse.png)
+![](/assets/screenshots/lighthousee.png)
 
 # 18. Unfixed Bugs
 
 All known bugs in this section has been moved to the section Testing with solution when they have been solved. Last known bug solved on 2022-04-04. No more testing will be conducted now and the project will be submitted.
 
-Back to top
 
 # 19. Development and Deployment
 
